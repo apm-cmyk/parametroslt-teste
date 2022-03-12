@@ -22,7 +22,25 @@ public class Main {
 		resistencia.add(resistenciaFase1);
 		//resistencia.add(resistenciaFase2);
 		
+		/*Logica do projeto:
+		 * 3 - Classes parametro (resistencia, reatanciaIndutiva e reatanciaCapacitiva)
+		 * Posteriormente a gente pode pensar o que
+		 * elas tem em comum e criar uma classe pai tipo paramentro
+		 * 1 - Classe calcularParamento:
+		 * Recebe qualquer tipo de parametro e tem 3 metodos principais
+		 * herdados da interface procedimentos
+		 * 1 - Main:
+		 * Eu vou criar um objeto parametro para cada circuito
+		 * colocar em um Array de objetos
+		 * e chamar a classe calcularParametro para receber a saida
+		 * 1 clasee Complexo:
+		 * Classe utilitária criada para fazer opeação com numeros complexos
+		 * 
+		*/
+		
 		CalcularParametro parametro = new CalcularParametro(60,resistencia);
+		
+		
 		
 		parametro.efeitoSoloSimplificado();
 		parametro.reducaoEquivalenteParaRaio();
